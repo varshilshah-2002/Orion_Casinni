@@ -1,15 +1,11 @@
 body{
-    background-color: rgb(13, 16, 54);
+    background-color: rgb(1, 2, 12);
     color: #fff;
-}
-* {
-    box-sizing: border-box;
-  }
-
-  body {
+    overflow-x: hidden !important;
     margin: 0px;
     font-family: 'segoe ui';
-  }
+}
+
 
   .nav {
     height: 50px;
@@ -132,10 +128,18 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+
+  
 }
+@media only screen and (max-width: 600px) {.container {
+
+}}
+
+
 .container .card{
   position: relative;
+  top: 50vh;
+  left: 15vw;
   width: 300px;
   height: 400px;
   background: #0c002b;
@@ -146,7 +150,16 @@ body{
   box-shadow: 0 20px 50px rgba(0,0,0,0.2);
   overflow: hidden;
 }
-.container:hover .card{
+@media only screen and (max-width: 600px) {.container .card
+{
+  position: relative;
+  top: 50vh;
+  left: -11.2%;
+  width: 200px;
+  height: 300px;
+ 
+}}
+  .container:hover .card{
   opacity: 0.2;
 }
 .container .card:hover{
