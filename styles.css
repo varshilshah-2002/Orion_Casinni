@@ -120,6 +120,8 @@ body{
 #banner{
   position: relative;
   z-index: 90;
+  background-color: cadetblue;
+  height: 65vh;
 }
 #title{
     font-size: 3em;
@@ -134,8 +136,10 @@ body{
 #header-img{
     margin-top: 3%;
     position: absolute;
-    left:40%;
-    border-radius: 4px;
+    height: 200px;
+    width: auto;
+    left:43.5%;
+    border-radius:50%;
 }
 @media only screen and (max-width: 600px) {
     #header-img {
@@ -160,7 +164,7 @@ body{
   
 
 }}
-.parallax{
+/* .parallax{
   margin-top: 60vh;
   height: 50vh;
   background-image: url("https://img.freepik.com/free-vector/space-with-stars-universe-space-infinity-background_78474-99.jpg?size=626&ext=jpg");
@@ -170,8 +174,14 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 99;
-}
+} */
 
+.static1{
+  margin-top: 60vh;
+  height: 50vh;}
+.static2{
+  margin-top: 2vh;
+  height: 50vh;}
 
 
 .banner-info{
@@ -358,3 +368,21 @@ body{
     transform: translateY(-100%);
   }
 }
+#footer {
+  height: 230px;
+  position: relative;
+  border-width: 5px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(74, 228, 35), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;  
+  background-color: rgba(9, 17, 7, 0.473);
+  }
+  .clearfooter {
+    height: 330px;
+    clear: both;
+    }
+    
