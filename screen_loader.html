@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+   <div class="main_body">
     <div class="loader">
       <span style="--i:1;"></span>
       <span style="--i:2;"></span>
@@ -30,5 +31,13 @@
       <span style="--i:20;"></span>
       <div class="rocket"></div>
     </div>
+   </div>
+   <script>
+    //after window is loaded completely 
+    window.onload = function(){
+        //hide the preloader
+        document.querySelector(".loader").style.display = "none";
+    }
+</script>
   </body>
 </html>
