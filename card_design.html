@@ -209,8 +209,17 @@
 .content{
   z-index: 999;
 }
+#loading{
+  width: 100%;
+  position: fixed;
+  height:100vh;
+  background: #fff url('globe.gif') no-repeat center center;
+  z-index:1;
+  overflow:visible;
+}
   </style>
   <body>
+    <div id="loading"></div>
     <div class="container">
       <div class="card">
 
@@ -283,10 +292,29 @@
         </div>
         </div>
       </div>
-
-
-      
     </div>
-    
   </body>
+  <script type="text/javascript">
+  var loading;
+  function preload(opacity){
+    if(opacity <= 0){
+      showContent();
+    }
+    else {
+      loading.style.opacity = opacity;
+      window.setTimeout(function(){
+        preload(opacity - 0.05)
+      },100);
+    }
+  }
+    }
+    function displayContent(){
+      loading.style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }
+    document.addEventListener("DOMContentLoaded", function(){
+      loading = document.getElementById('loading');
+      preload(1);
+    });
+  </script>
 </html>
