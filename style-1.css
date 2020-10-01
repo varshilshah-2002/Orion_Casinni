@@ -1,36 +1,69 @@
-body{
-    background-color: rgb(110, 175, 129);
-    color: #fff;
-    overflow-x: hidden;
-    
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+
+html {
+  height: 100%;
+  overflow: hidden;
 }
 
+body { 
+  background-color: rgb(110, 175, 129);
+  color: #fff;
+  transform-style: preserve-3d;
+	perspective: 1px;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+::-webkit-scrollbar-thumb{
+  background-color: cadetblue;
+  color: #000 !important;
+}
 .wrapper{
-   width: 100vw;
+   width: 95.9vw !important;
    padding: 3%;
-   background-color: rgb(13, 19, 71);
+   background-color: rgb(22, 24, 49);
    text-align: center;
    border-radius: 4px;
    font-size: 3em;
    font-weight: 10;
+
+   margin-top: 1%;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 @media (max-width:600px) {
 .wrapper{
-font-size: 1.5em;
+font-size: 1.3em;
 width: fit-content;
+margin: 0.2%;
 }}
-.content-heading{
+.content-heading-1{
     font-size: 1.3em;
     position: relative;
-    left: 300px;
-    top: 100px;
+    left: 12%;
+    top:25%;
+}
+.content-heading-2{
+    font-size: 1.3em;
+    position: relative;
+    right: -60%;
+    top:25%;
 }
 @media (max-width:600px) {
-.content-heading{
-    font-size: 1em;
+.content-heading-1{
+    font-size: 0.7em;
     position: relative;
-    left: 10%;
+    left: 17%;
+    padding: 3% !important;
+    top: 30px;
+}
+}
+@media (max-width:600px) {
+.content-heading-2{
+    font-size: 0.7em;
+    position: relative;
+    left: 17%;
+    padding: 3% !important;
     top: 30px;
 }
 }
@@ -38,9 +71,18 @@ width: fit-content;
 @media (max-width:775px) {
 .content-a{
     text-align: justify;
-    width: 320px !important;
+    width: 330px !important;
     padding:2%;
-    left: 1% !important;
+    left: 2% !important;
+}
+}
+
+@media (max-width:775px) {
+.content-b{
+    text-align: justify;
+    width: 330px !important;
+    padding:2%;
+    left: 2% !important;
 }
 }
 .content-a{
@@ -50,6 +92,17 @@ width: fit-content;
     position: relative;
     width: 500px;
     left: 700px;
+    margin-bottom: 10%;
+}
+.content-b{
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    position: relative;
+    width: 500px;
+    left:14%;
+    margin-bottom: 10%;
+
 }
 
 /* #img-1{
@@ -327,7 +380,7 @@ a{
 .blog-card {
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
+  margin: 5rem auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
   background: #fff;
@@ -506,3 +559,152 @@ a{
 #card-p{
     color: cadetblue;
 }
+
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+  margin-bottom: 5%;
+}
+@media (max-width:600px) {
+  .slide{
+    width:fit-content;
+    height: 500px;
+    margin: auto;
+    margin-top: 6% !important;
+    font-size: 10;
+
+  }
+}
+@media (max-width:600px) {
+  .wrap-parallax{
+    width:fit-content;
+    height: 500px;
+    margin: auto;
+    margin-top: 6% !important;
+  }
+}
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+@media (max-width:600px) {
+  img{
+    width:100px;
+    height:90px;
+    margin: auto;
+    margin-top: 6% !important;
+    border-radius: 5px;
+  background: rgba(240, 230, 220, 0.39);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  }
+}
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("https://lorempixel.com/640/480/abstract/6/");
+  z-index:2;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+
+#slide2 {
+  margin-top: 5%;
+  background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/photos-manipulation-forest-nigth-full-of-stars-backgrounds-desktop-wallpapers-high-definition-monitor-download-free-amazing-background-photos-artwork-1920x1080.jpg");
+  z-index:2;
+}
+
+/* #slide3:before {
+  background-image: url("https://lorempixel.com/640/480/abstract/5/");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #222;
+} */
+#footer {
+  height: 230px;
+  position: relative;
+  border-width: 5px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(53, 85, 146), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;  
+  background-color: rgba(9, 17, 7, 0.473);
+  }
+  .clearfooter {
+    height: 330px;
+    clear: both;
+    }
+    
