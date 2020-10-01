@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 0;
   }
   .container .card{
     position: relative;
@@ -69,6 +70,7 @@
   .container .card:hover .content h2{
     opacity: 1;
     transform: translateY(-70px);
+    z-index: 0;
   }
   .container .card .content h3{
     position: relative;
@@ -92,9 +94,10 @@
   .container .card:hover .content h3,
   .container .card:hover .content p{
     opacity: 1;
+
   }
   .container .card .content a{
-    display: inline-block;
+    display: relative;
     margin-top:200px;
     padding: 10px 15px;
     background: #fff;
@@ -179,46 +182,111 @@
       transform: translateY(-100%);
     }
   }
+.content-card{
+  margin-top: 12%;
+  padding: 3%;
+  position: relative;
+  top: -18px;
+  z-index:0;
+}
+.card-image{
+  width: 250px;
+  position: relative;
+  top:-19px;
+  z-index: -5;
+}
+.button-card{
+  position: relative;
+  top: 30px;
 
+}
+.number-card{
+  position: relative;
+  z-index: 99;
+  top: 80px;
+  color: rgb(207, 138, 159) !important;
+}
+.content{
+  z-index: 999;
+}
   </style>
   <body>
     <div class="container">
       <div class="card">
+
         <span></span>
         <span></span>
         <span></span>
         <span></span>
+
         <div class="content">
-          <h2>01</h2>
+          <h2 class="number-card">01</h2>
+          <div class="image-card">
+            <img class="card-image" src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg"  alt="">
+          </div>
+
+          <hr>
+
+         <div class="content-card">
           <h3>Post Title</h3>
-          <p>this is a card design.</p>
-          <a href="#">Read More</a>
+          <p>this is a card designthis is a card design this is a card design this is a card design.</p>
+          <a class="button-card" href="#">Read More</a>
+
+        </div>
         </div>
       </div>
+
       <div class="card">
+
         <span></span>
         <span></span>
         <span></span>
         <span></span>
+
         <div class="content">
-          <h2>02</h2>
+          <h2 class="number-card">01</h2>
+          <div class="image-card">
+            <img class="card-image" src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg"  alt="">
+          </div>
+
+          <hr>
+
+         <div class="content-card">
           <h3>Post Title</h3>
-          <p>this is a card design.</p>
-          <a href="#">Read More</a>
+          <p>this is a card designthis is a card design this is a card design this is a card design.</p>
+          <a class="button-card" href="#">Read More</a>
+
+        </div>
         </div>
       </div>
+
       <div class="card">
+
         <span></span>
         <span></span>
         <span></span>
         <span></span>
+
         <div class="content">
-          <h2>03</h2>
+          <h2 class="number-card">01</h2>
+          <div class="image-card">
+            <img class="card-image" src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg"  alt="">
+          </div>
+
+          <hr>
+
+         <div class="content-card">
           <h3>Post Title</h3>
-          <p>this is a card design.</p>
-          <a href="#">Read More</a>
+          <p>this is a card designthis is a card design this is a card design this is a card design.</p>
+          <a class="button-card" href="#">Read More</a>
+
+        </div>
         </div>
       </div>
+
+
+      
     </div>
+    
   </body>
 </html>
