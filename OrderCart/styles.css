@@ -149,7 +149,7 @@ nav{
     color: #fff;
     text-align: center;
     font-size: 3em;
-   
+
 }
 
 .about-band-image {
@@ -243,6 +243,24 @@ nav{
     margin-bottom: 15px;
 }
 
+.font-weight-bold{
+  font-size: 24%;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  text-decoration: none;
+  text-shadow: 5px 5px #558ABB;
+}
+.changecolor{
+  animation: colorchanges 1s infinite;
+}
+@keyframes colorchanges {
+  0%{color: #9400D3;}
+  25%{color:#4B0082;}
+  50%{color:#00FF00;}
+  75%{color:#FFFF00}
+  100%{color:#FF7F00 }
+}
+
 .shop-item-image {
     width: 300px;
 }
@@ -255,8 +273,8 @@ nav{
 
 .shop-item-price {
     flex-grow: 1;
-    color: rgb(243, 235, 235);
-    font-size: 2em;
+    color: yellow;
+    font-size: 1.5em;
 }
 
 .shop-items {
@@ -265,21 +283,21 @@ nav{
     justify-content: space-around;
 }
 .shop-item-1{
-    background-color: rgb(42, 14, 75);
+    background-color: black;
     padding: 10%;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .shop-item-2{
-    background-color: rgb(42, 14, 75);
+    background-color: black;
     padding: 10%;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .shop-item-3{
-    background-color: rgb(42, 14, 75);
+    background-color: black;
     padding: 10%;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -346,7 +364,7 @@ nav{
     background-color: #e5ecf1 !important;
     color:  #145a94;
 
-    
+
 
 
 }
