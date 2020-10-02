@@ -923,27 +923,26 @@ p {
     position: relative;
     top: 20px;
     z-index:0;
-    font-size: 1em !important;
 
   }
   .card-image{
     width: 250px;
     position: relative;
-    top:10px;
+    top:150px;
     z-index: -5;
   }
   .button-card{
     position: relative;
-    top: 30px ;
-    width: 100px ;
-    
+    top: -120px;
+    width: 100px;
+    font-size: 12;
 
 
   }
   .number-card{
     position: relative;
     z-index: 99;
-    top: 10px;
+    top: 30px;
     color: rgb(236, 230, 230) !important;
   }
   .content{
@@ -951,11 +950,10 @@ p {
   }
   .content-card h3{
     position: relative;
-    bottom: 250px;
-    right: 70px;
-    font-size: 1.6em !important;
+    bottom: 130px;
+    right: 20px;
   }
   .content-card p{
     position: relative;
-    top: 10px;
+    top: 50px;
   }
