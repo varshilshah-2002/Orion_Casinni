@@ -1,0 +1,179 @@
+body{
+    background-color: black;
+}
+#main-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height:90vh;
+    width:auto;
+    opacity: 0.7;
+    border-radius: 5px;
+    
+}
+.textbox{
+    height: 100px;
+    width: 200px;
+    font-family: monospace;
+    border-radius: 3px;
+}
+.text-1{
+    position: relative;
+    top: 90%;
+    left: 22%;
+    padding: 5%;
+    background-color: rgb(163, 248, 35);
+    font-size: 25px;
+    border-radius: 3px;
+
+}
+.text-1:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.text-2:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.text-3:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.text-4:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.text-5:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.text-6:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.text-2{
+    position: relative;
+    left: 81%;
+    bottom: 8%;
+    height:fit-content;
+    width: 200px;
+    padding: 1%;
+    border-radius: 3px;
+font-size: 25px;
+font-family: monospace;
+    background-color: rgb(163, 248, 35);
+
+}
+.text-3{
+    position: relative;
+    bottom: 570%;
+    left: 20%;       padding: 5%;
+    border-radius: 3px;
+    font-size: 25px;
+
+
+    background-color: rgb(163, 248, 35);
+    font-size: 25px;
+
+
+}
+
+.text-4{
+    position: relative;
+    bottom: 220%;
+    left: 20%;
+    padding: 5%;
+    border-radius: 3px;
+
+    background-color: rgb(163, 248, 35);
+    font-size: 25px;
+
+
+}
+.text-5{
+    position: relative;
+    bottom: 830%;
+    left: 610%;
+    border-radius: 3px;
+
+    padding: 5%;
+    background-color: rgb(163, 248, 35);
+    font-size: 25px;
+
+
+}
+.text-6{
+    position: relative;
+    bottom: 460%;
+    left: 610%;
+    padding: 5%;
+    background-color: rgb(163, 248, 35);
+    font-size: 25px;
+    border-radius: 3px;
+
+
+
+}
+@media (max-width: 767px) {
+    .text-1{
+        position: relative;
+        top: 50%;
+        left: 20%;
+        padding: 2%;
+
+        font-size: 30px;
+
+    }
+}
+@media (max-width: 767px) {
+    .text-2{
+        position: relative;
+        top: 2%;
+        left: 160%;
+        font-size: 30px;
+
+    }
+}
+@media (max-width: 767px) {
+    .text-3{
+        position: relative;
+        top: 50%;
+        left: 20%;
+        font-size: 30px;
+
+    }
+}
+@media (max-width: 767px) {
+    .text-4{
+        position: relative;
+        bottom: 380%;
+        left: 280%;
+        font-size: 30px;
+
+    }
+}
+@media (max-width: 767px) {
+    .text-5{
+        position: relative;
+        bottom: 600%;
+        left: 20%;
+        font-size: 30px;
+
+    }
+}
+@media (max-width: 767px) {
+    .text-6{
+        position: relative;
+        bottom: 270%;
+        left: 280%;
+        font-size: 30px;
+
+    }
+}
+@media (max-width: 767px) {
+
+#main-image{
+    display: block;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-top: 30%;
+    width: 50%;
+    height:90vh;
+    width:auto;
+    
+}}
