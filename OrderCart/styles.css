@@ -1,10 +1,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
 * {
     box-sizing: border-box;
-    font-family:'Source Sans Pro', sans-serif;
     color: #777;
 }
 
@@ -109,6 +110,35 @@ nav{
       color: cyan;
     }
   }
+  .wrapper{
+    width: 100vw !important;
+    padding: 3%;
+    background-color: rgb(22, 24, 49);
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    bottom: 10%;
+    font-family:Audiowide;
+    z-index: 999;
+   
+   }
+ .wrapper h1{
+   font-weight: 200;
+   color:orange;
+   font-size: 5em ;
+
+ }
+ .wrapper h2{
+   font-weight: 30 !important;
+   font-size: 1.2em;
+   color: white;
+ }
+ @media (max-width:600px) {
+ .wrapper{
+ font-size: 1.3em;
+ width: fit-content;
+ 
+ }}
 .main-header {
     background-color: rgba(48, 10, 83, 0.6);
     background-blend-mode: multiply;
@@ -125,16 +155,15 @@ nav{
     color: white;
 }
 
-.band-name-large {
-    font-size: 8em;
-}
 
 .content-section {
     margin: 1em;
 }
+
 .cart-design{
-    background-color: rgb(12, 9, 56);
-    color: #fff;
+  background-color: #3f0d12;
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+      color: #fff;
     border-radius: 4px;
 }
 
@@ -147,7 +176,8 @@ nav{
     font-weight: normal;
     color: #fff;
     text-align: center;
-    font-size: 2em;
+    font-size: 6em;
+    font-family: Audiowide;
 
 }
 
@@ -159,34 +189,6 @@ nav{
     border-radius: 50%;
 }
 
-.main-footer {
-    background-color: #4e5f66;
-    color: rgb(187, 177, 177);
-    padding: .25em 0;
-    font-size: 0.5em;
-    list-style: none;
-}
-
-.main-footer-container {
-    display: flex;
-    align-items: center;
-}
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-.footer-nav img {
-    width: 30px;
-    height: 30px;
-    list-style: none;
-
-}
 
 .btn {
     text-align: center;
@@ -239,7 +241,12 @@ nav{
     font-weight: bold;
     font-size: 3em;
     color: rgb(236, 218, 218);
-    margin-bottom: 15px;
+margin-bottom: 9%;
+padding: 3%;
+border-radius: 5px;
+color: #fff;
+background-color: #3f0d12;
+background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
 }
 
 .font-weight-bold{
@@ -261,9 +268,12 @@ nav{
 }
 
 .shop-item-image {
-    width: 300px;
+    width: 200px;
 }
-
+.shop-item{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .shop-item-details {
     display: flex;
     align-items: center;
@@ -275,15 +285,20 @@ nav{
     color: yellow;
     font-size: 1.5em;
 }
+.shop-item-price:hover{
+  color: red;
+  cursor: pointer;
+}
 
 .shop-items {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
+    font-family: Montserrat;
+    font-size: 0.5em;
 }
 .shop-item-1{
-    background-color: black;
+    background-color: rgb(3, 3, 3);
     padding: 3%;
     width:30vw;
     height: 50%;
@@ -294,12 +309,15 @@ nav{
         to bottom, 
         rgb(253, 247, 247), 
         rgba(0, 0, 0, 0)
-      ) 1 100%;    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      ) 1 100%;   
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 .shop-item-2{
-    background-color: black;
-    padding: 3%;
+  background-color: #000000;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);    padding: 3%;
     width:30vw;
     height: 50%;
     border-style: solid;
@@ -339,6 +357,7 @@ nav{
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
+    font-family: Montserrat;
 }
 
 .cart-row {
@@ -390,14 +409,13 @@ nav{
 
 
 }
-.image-3{
-    height:200px;
-    width: auto;
+.image-3,.image-2{
+  width: 245px;
+  margin: auto;
+} 
+
 }
-.image-2{
-    height:200px;
-    width: auto;
-}
+
 
 .btn-danger:hover {
     background-color: #2c2a2a;
@@ -2144,3 +2162,4 @@ nav{
               transform: translateY(100%);
     }
   }
+  
