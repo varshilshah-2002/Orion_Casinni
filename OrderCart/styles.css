@@ -161,8 +161,10 @@ nav{
 }
 
 .cart-design{
-  background-color: #3f0d12;
-  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+  background-color: #ee9617;
+background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+
+  
       color: #fff;
     border-radius: 4px;
 }
@@ -196,7 +198,8 @@ nav{
     cursor: pointer;
     background-color: #20bf6b;
     color: #fff;
-    padding: 1.6rem 3rem;
+padding: 3%;
+width: 120px;
     font-size: 0.9rem;
     box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034),
                 0 6.7px 5.3px rgba(0,0,0,0.048),
@@ -206,16 +209,14 @@ nav{
                 0 100px 80px rgba(0,0,0,0.12);
     position: relative;
     overflow:hidden;
+    font-family: Montserrat;
 }
 
 .btn-header {
     margin: .5em 15% 2em 15%;
-    /*color: white;
-    border: 2px solid #2D9CDB;*/
-    border-radius: 0;
-    /*padding-left: 2em;
-    padding-right: 2em;*/
 
+    border-radius: 0;
+ 
 }
 
 .btn-header:hover {
@@ -238,24 +239,32 @@ nav{
   transform: translateX(100%) rotate(45deg);
 }
 
-
+.logo{
+  padding-top: 2px;
+  width: 65px;
+	height:65px;
+	border-radius: 50%;
+	padding-left: 2px;
+}
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color: #6e1a22;
     border: none;
     height: 50px;
+    text-align: center;
+    
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: white;
-    color: #56CCF2;
+    background-color: rgb(114, 103, 103);
+    color: #f0ebe5;
 
 }
 /*******************************************************/
 .shop-item {
-    margin: 38px;
+  margin: 1%;
 }
 
 .shop-item-title {
@@ -264,13 +273,12 @@ nav{
     text-align: center;
     font-weight: bold;
     font-size: 3em;
-    color: rgb(236, 218, 218);
+    color: white;
 margin-bottom: 9%;
 padding: 3%;
+float: left;
 border-radius: 5px;
-color: #fff;
-background-color: #3f0d12;
-background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+background-color: #3f0d1285;
 }
 
 .font-weight-bold{
@@ -281,7 +289,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
   text-shadow: 5px 5px #558ABB;
 }
 .shop-item-image {
-    width: 200px;
+    width: 90%;
 }
 .shop-item{
   background-repeat: no-repeat;
