@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 )
 * {
 	margin: 0;
@@ -26,7 +27,7 @@
 	justify-content: flex-end;
 	align-items: center;
   padding: 5px;
-  
+
 	font-size: 20px;
 	transform: translateX(-170px);
 	-webkit-transform: translateX(-170px);
@@ -149,13 +150,13 @@ input[type="checkbox"]{
   nav .menu-btn i{
     display: block;
     background-color: blanchedalmond;
-    
+
   }
   .fa-bars{
     display: block;
   }
 
- 
+
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
@@ -234,7 +235,7 @@ body {
    position: relative;
    bottom: 10%;
    font-family:Audiowide;
-  
+
   }
 .wrapper h1{
   font-weight: 200;
@@ -298,7 +299,7 @@ width: fit-content;
     padding:2%;
     left: 10% !important;
     top: 3%;
-    
+
 }
 }
 .content-a{
@@ -362,7 +363,7 @@ a{
     box-shadow: 0 20px 50px rgba(0,0,0,0.2);
     overflow: hidden;
   }
- 
+
 
 h1 {
    font-size: 250%;
@@ -495,6 +496,7 @@ p {
   background: #222;
 } */
 #footer {
+	margin:50px;
   height: 230px;
   position: relative;
   border-width: 5px;
@@ -695,7 +697,7 @@ p {
     position: relative;
     top: 30px ;
     width: 100px ;
-    
+
 
 
   }
@@ -718,3 +720,155 @@ p {
     position: relative;
     top: 10px;
   }
+	/*styling footer begins here**********************************/
+	footer{
+	  /*position: fixed;*/
+	  bottom: 0px;
+	  width: 100%;
+	  background: #111;
+		padding-top: 20px;
+	}
+	.footer_usage_main{
+	  display: flex;
+	}
+	.footer_usage_main .box{
+	  flex-basis: 50%;
+	  padding: 10px 20px;
+	}
+	.box h2{
+	  font-size: 1.125rem;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	}
+	.box .usage{
+	  margin: 20px 0 0 0;
+	  position: relative;
+	}
+	.box .usage:before{
+	  position: absolute;
+	  usage: '';
+	  top: -10px;
+	  height: 2px;
+	  width: 100%;
+	  background: #1a1a1a;
+	}
+	.box .usage:after{
+	  position: absolute;
+	  usage: '';
+	  height: 2px;
+	  width: 15%;
+	  background: #f12020;
+	  top: -10px;
+	}
+	.left .usage p{
+	  text-align: justify;
+	}
+	.left .usage .social{
+	  margin: 20px 0 0 0;
+	}
+	.left .usage .social a{
+	  padding: 0 2px;
+	}
+	.left .usage .social a span{
+	  height: 40px;
+	  width: 40px;
+	  background: #1a1a1a;
+	  line-height: 40px;
+	  text-align: center;
+	  font-size: 18px;
+	  border-radius: 5px;
+	  transition: 0.3s;
+	}
+	.left .usage .social a span:hover{
+	  background: #f12020;
+	}
+	.center .usage #hovercheck{
+	  /*font-size: 1.4375rem;*/
+	  background: #1a1a1a;
+	  height: 42px;
+	  width: 42px;
+	  line-height: 45px;
+	  text-align: center;
+	  border-radius: 50%;
+	  transition: 0.3s;
+	  cursor: pointer;
+	}
+	.center .usage #hovercheck:hover{
+	  background: #f12020;
+	}
+	.center .usage .text{
+	  font-size: 1.0625rem;
+	  font-weight: 500;
+	  padding-left: 10px;
+	}
+	.center .usage .phone{
+	  margin: 15px 0;
+	}
+	.right form .text{
+	  font-size: 1.0625rem;
+	  margin-bottom: 2px;
+	  color: #656565;
+	}
+	.right form .msg{
+	  margin-top: 10px;
+	}
+	.right form input, .right form .msgForm{
+	  width: 100%;
+	  font-size: 1.0625rem;
+	  background: #151515;
+	  padding-left: 10px;
+	  border: 1px solid #222222;
+	}
+	.right form input:focus,
+	.right form .msgForm:focus{
+	  outline-color: #3498db;
+	}
+	.right form input{
+	  height: 35px;
+	}
+	.right form .btn{
+	  margin-top: 10px;
+	}
+	.right form .btn button{
+	  height: 40px;
+	  width: 100%;
+	  border: none;
+	  outline: none;
+	  background: #f12020;
+	  font-size: 1.0625rem;
+	  font-weight: 500;
+	  cursor: pointer;
+	  transition: .3s;
+	}
+	.right form .btn button:hover{
+	  background: green;
+	}
+	.bottom center{
+	  padding: 5px;
+	  font-size: 0.9375rem;
+	  background: #151515;
+	}
+	.bottom center span{
+	  color: #656565;
+	}
+	.bottom center a{
+	  color: #f12020;
+	  text-decoration: none;
+	}
+	.bottom center a:hover{
+	  text-decoration: underline;
+	}
+	@media screen and (max-width: 900px) {
+	  footer{
+	    position: relative;
+	    bottom: 0px;
+	  }
+	  .footer_usage_main{
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	  }
+	  .footer_usage_main .box{
+	    margin: 5px 0;
+	  }
+	}
+/*footer design*/
