@@ -120,7 +120,7 @@ nav{
     bottom: 10%;
     font-family:Audiowide;
     z-index: 999;
-   
+
    }
  .wrapper h1{
    font-weight: 200;
@@ -137,7 +137,7 @@ nav{
  .wrapper{
  font-size: 1.3em;
  width: fit-content;
- 
+
  }}
 .main-header {
     background-color: rgba(48, 10, 83, 0.6);
@@ -188,31 +188,55 @@ nav{
     margin: 15px;
     border-radius: 50%;
 }
-
+/*********************real button to design***************************/
 
 .btn {
     text-align: center;
     vertical-align: middle;
-    padding: .67em .67em;
     cursor: pointer;
+    background-color: #20bf6b;
+    color: #fff;
+    padding: 1.6rem 3rem;
+    font-size: 0.9rem;
+    box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034),
+                0 6.7px 5.3px rgba(0,0,0,0.048),
+                0 12.5px 10px rgba(0,0,0,0.06),
+                0 22.3px 17.9px rgba(0,0,0,0.072),
+                0 41.8px 33.4px rgba(0,0,0,0.006),
+                0 100px 80px rgba(0,0,0,0.12);
+    position: relative;
+    overflow:hidden;
 }
 
 .btn-header {
     margin: .5em 15% 2em 15%;
-    color: white;
-    border: 2px solid #2D9CDB;
-    background-color: rgba(255, 255, 255, .1);
+    /*color: white;
+    border: 2px solid #2D9CDB;*/
     border-radius: 0;
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding-left: 2em;
-    padding-right: 2em;
+    /*padding-left: 2em;
+    padding-right: 2em;*/
+
 }
 
 .btn-header:hover {
-    background-color: rgba(255, 255, 255, .3);
+  background-color: #20bf6b;
+  color: #fff;
+  transition: all 0.5s;
 }
-
+.btn::before{
+  content: '';
+  width: 100%;
+  height: 40%;
+  background-color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.5s;
+}
+.btn:hover::before{
+  transform: translateX(100%) rotate(45deg);
+}
 
 
 .btn-primary {
@@ -229,7 +253,7 @@ nav{
     color: #56CCF2;
 
 }
-
+/*******************************************************/
 .shop-item {
     margin: 38px;
 }
@@ -256,17 +280,6 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
   text-decoration: none;
   text-shadow: 5px 5px #558ABB;
 }
-.changecolor{
-  animation: colorchanges 1s infinite;
-}
-@keyframes colorchanges {
-  0%{color: #6b248a;}
-  25%{color:#6809ac;}
-  50%{color:#219921;}
-  75%{color:#b4b41a}
-  100%{color:#d47c23 }
-}
-
 .shop-item-image {
     width: 200px;
 }
@@ -304,12 +317,12 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     height: 50%;
     border-width: 3px;
     border-style: solid;
-    border-image: 
+    border-image:
       linear-gradient(
-        to bottom, 
-        rgb(253, 247, 247), 
+        to bottom,
+        rgb(253, 247, 247),
         rgba(0, 0, 0, 0)
-      ) 1 100%;   
+      ) 1 100%;
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -321,10 +334,10 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     width:30vw;
     height: 50%;
     border-style: solid;
-    border-image: 
+    border-image:
       linear-gradient(
-        to bottom, 
-        rgb(253, 247, 247), 
+        to bottom,
+        rgb(253, 247, 247),
         rgba(0, 0, 0, 0)
       ) 1 100%;      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -335,15 +348,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     width:30vw;
     height: 50%;
     border-style: solid;
-    border-image: 
+    border-image:
       linear-gradient(
-        to bottom, 
-        rgb(253, 247, 247), 
+        to bottom,
+        rgb(253, 247, 247),
         rgba(0, 0, 0, 0)
       ) 1 100%;      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-
+/*this is the cart part*/
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
@@ -392,7 +405,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     border-radius: 60%;
 
 }
-
+/******************remove btn************************/
 .btn-danger {
     color: white;
     background-color: #145a94;
@@ -412,15 +425,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
 .image-3,.image-2{
   width: 245px;
   margin: auto;
-} 
+}
 
 }
 
 
 .btn-danger:hover {
     background-color: #2c2a2a;
-}
-
+}remove btn
+/********************remove btn**************************/
 .cart-quantity-input {
     height: 34px;
     width: 50px;
@@ -461,11 +474,11 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     font-weight: 800;
 }
 
-.btn-purchase {
+/*.btn-purchase {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
-}
+}*/
 .animated-button {
     background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
     padding: 20px 40px;
@@ -479,13 +492,13 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     font-size: 20px;
     letter-spacing: 2.5px;
     text-align: center;
-    
+
     text-transform: uppercase;
     text-decoration: none;
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button::before {
     content: '';
     position: absolute;
@@ -498,15 +511,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button span {
     position: absolute;
   }
-  
+
   .animated-button span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -517,7 +530,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @-webkit-keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -528,7 +541,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -539,7 +552,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -550,7 +563,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @-webkit-keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -561,7 +574,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -572,7 +585,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -583,7 +596,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @-webkit-keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -594,7 +607,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -605,7 +618,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -616,7 +629,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @-webkit-keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -627,7 +640,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -638,7 +651,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button1 {
     background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
     padding: 20px 40px;
@@ -656,7 +669,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button1::before {
     content: '';
     position: absolute;
@@ -669,15 +682,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button1:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button1 span {
     position: absolute;
   }
-  
+
   .animated-button1 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -688,7 +701,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -699,7 +712,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button1 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -710,7 +723,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -721,7 +734,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button1 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -732,7 +745,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -743,7 +756,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button1 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -754,7 +767,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -765,7 +778,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button2 {
     background: linear-gradient(-30deg, #3d240b 50%, #2b1a08 50%);
     padding: 20px 40px;
@@ -783,7 +796,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button2::before {
     content: '';
     position: absolute;
@@ -796,15 +809,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button2:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button2 span {
     position: absolute;
   }
-  
+
   .animated-button2 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -815,7 +828,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -826,7 +839,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button2 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -837,7 +850,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -848,7 +861,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button2 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -859,7 +872,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -870,7 +883,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button2 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -881,7 +894,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -892,7 +905,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button3 {
     background: linear-gradient(-30deg, #3d3d0b 50%, #2b2b08 50%);
     padding: 20px 40px;
@@ -910,7 +923,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button3::before {
     content: '';
     position: absolute;
@@ -923,15 +936,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button3:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button3 span {
     position: absolute;
   }
-  
+
   .animated-button3 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -942,7 +955,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -953,7 +966,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button3 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -964,7 +977,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -975,7 +988,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button3 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -986,7 +999,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -997,7 +1010,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button3 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1008,7 +1021,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1019,7 +1032,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button4 {
     background: linear-gradient(-30deg, #243d0b 50%, #1a2b08 50%);
     padding: 20px 40px;
@@ -1037,7 +1050,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button4::before {
     content: '';
     position: absolute;
@@ -1050,15 +1063,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button4:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button4 span {
     position: absolute;
   }
-  
+
   .animated-button4 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1069,7 +1082,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1080,7 +1093,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button4 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1091,7 +1104,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1102,7 +1115,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button4 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -1113,7 +1126,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -1124,7 +1137,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button4 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1135,7 +1148,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1146,7 +1159,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button5 {
     background: linear-gradient(-30deg, #0b3d0b 50%, #082b08 50%);
     padding: 20px 40px;
@@ -1164,7 +1177,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button5::before {
     content: '';
     position: absolute;
@@ -1177,15 +1190,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button5:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button5 span {
     position: absolute;
   }
-  
+
   .animated-button5 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1196,7 +1209,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1207,7 +1220,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button5 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1218,7 +1231,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1229,7 +1242,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button5 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -1240,7 +1253,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -1251,7 +1264,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button5 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1262,7 +1275,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1273,7 +1286,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button6 {
     background: linear-gradient(-30deg, #0b3d24 50%, #082b1a 50%);
     padding: 20px 40px;
@@ -1291,7 +1304,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button6::before {
     content: '';
     position: absolute;
@@ -1304,15 +1317,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button6:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button6 span {
     position: absolute;
   }
-  
+
   .animated-button6 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1323,7 +1336,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1334,7 +1347,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button6 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1345,7 +1358,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1356,7 +1369,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button6 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -1367,7 +1380,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -1378,7 +1391,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button6 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1389,7 +1402,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1400,7 +1413,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button7 {
     background: linear-gradient(-30deg, #0b3d3d 50%, #082b2b 50%);
     padding: 20px 40px;
@@ -1418,7 +1431,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button7::before {
     content: '';
     position: absolute;
@@ -1431,15 +1444,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button7:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button7 span {
     position: absolute;
   }
-  
+
   .animated-button7 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1450,7 +1463,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1461,7 +1474,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button7 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1472,7 +1485,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1483,7 +1496,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button7 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -1494,7 +1507,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -1505,7 +1518,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button7 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1516,7 +1529,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1527,7 +1540,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button8 {
     background: linear-gradient(-30deg, #0b243d 50%, #081a2b 50%);
     padding: 20px 40px;
@@ -1545,7 +1558,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button8::before {
     content: '';
     position: absolute;
@@ -1558,15 +1571,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button8:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button8 span {
     position: absolute;
   }
-  
+
   .animated-button8 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1577,7 +1590,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1588,7 +1601,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button8 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1599,7 +1612,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1610,7 +1623,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button8 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -1621,7 +1634,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -1632,7 +1645,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button8 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1643,7 +1656,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1654,7 +1667,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button9 {
     background: linear-gradient(-30deg, #0b0b3d 50%, #08082b 50%);
     padding: 20px 40px;
@@ -1672,7 +1685,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button9::before {
     content: '';
     position: absolute;
@@ -1685,15 +1698,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button9:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button9 span {
     position: absolute;
   }
-  
+
   .animated-button9 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1704,7 +1717,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1715,7 +1728,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button9 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1726,7 +1739,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1737,7 +1750,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button9 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -1748,7 +1761,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -1759,7 +1772,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button9 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1770,7 +1783,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1781,7 +1794,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button10 {
     background: linear-gradient(-30deg, #240b3d 50%, #1a082b 50%);
     padding: 20px 40px;
@@ -1799,7 +1812,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button10::before {
     content: '';
     position: absolute;
@@ -1812,15 +1825,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button10:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button10 span {
     position: absolute;
   }
-  
+
   .animated-button10 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1831,7 +1844,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1842,7 +1855,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button10 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1853,7 +1866,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1864,7 +1877,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button10 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -1875,7 +1888,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -1886,7 +1899,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button10 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -1897,7 +1910,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -1908,7 +1921,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button11 {
     background: linear-gradient(-30deg, #3d0b3d 50%, #2b082b 50%);
     padding: 20px 40px;
@@ -1926,7 +1939,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button11::before {
     content: '';
     position: absolute;
@@ -1939,15 +1952,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button11:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button11 span {
     position: absolute;
   }
-  
+
   .animated-button11 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -1958,7 +1971,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -1969,7 +1982,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button11 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -1980,7 +1993,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -1991,7 +2004,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button11 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -2002,7 +2015,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -2013,7 +2026,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button11 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -2024,7 +2037,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -2035,7 +2048,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
+
   .animated-button12 {
     background: linear-gradient(-30deg, #2470b8 50%, #2b081a 50%);
     padding: 20px 40px;
@@ -2053,7 +2066,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }
-  
+
   .animated-button12::before {
     content: '';
     position: absolute;
@@ -2066,15 +2079,15 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
   }
-  
+
   .animated-button12:hover::before {
     opacity: 0.2;
   }
-  
+
   .animated-button12 span {
     position: absolute;
   }
-  
+
   .animated-button12 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -2085,7 +2098,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateTop linear infinite;
             animation: 2s animateTop linear infinite;
   }
-  
+
   @keyframes animateTop {
     0% {
       -webkit-transform: translateX(100%);
@@ -2096,7 +2109,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(-100%);
     }
   }
-  
+
   .animated-button12 span:nth-child(2) {
     top: 0px;
     right: 0px;
@@ -2107,7 +2120,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateRight linear -1s infinite;
             animation: 2s animateRight linear -1s infinite;
   }
-  
+
   @keyframes animateRight {
     0% {
       -webkit-transform: translateY(100%);
@@ -2118,7 +2131,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(-100%);
     }
   }
-  
+
   .animated-button12 span:nth-child(3) {
     bottom: 0px;
     left: 0px;
@@ -2129,7 +2142,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateBottom linear infinite;
             animation: 2s animateBottom linear infinite;
   }
-  
+
   @keyframes animateBottom {
     0% {
       -webkit-transform: translateX(-100%);
@@ -2140,7 +2153,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateX(100%);
     }
   }
-  
+
   .animated-button12 span:nth-child(4) {
     top: 0px;
     left: 0px;
@@ -2151,7 +2164,7 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
     -webkit-animation: 2s animateLeft linear -1s infinite;
             animation: 2s animateLeft linear -1s infinite;
   }
-  
+
   @keyframes animateLeft {
     0% {
       -webkit-transform: translateY(-100%);
@@ -2162,4 +2175,3 @@ background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
               transform: translateY(100%);
     }
   }
-  
