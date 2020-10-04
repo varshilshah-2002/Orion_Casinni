@@ -383,13 +383,17 @@ width: fit-content;
   width: 500px;
   position: relative;
   right: 3%;
-	box-shadow: -2px 13px 7px -4px rgba(233,240,242,1);
+	-webkit-box-shadow: 0 15px 10px rgb(58, 54, 54);
+      -moz-box-shadow: 0 15px 10px rgb(90, 86, 86);
+      box-shadow: 0 15px 10px rgb(14, 13, 13);
 }
 .planet-image{
   width: 500px;
   position: relative;
   left: 2%;
-	box-shadow: 10px 10px 19px 0px rgba(233,240,242,1);
+	-webkit-box-shadow: 0 15px 10px rgb(58, 54, 54);
+      -moz-box-shadow: 0 15px 10px rgb(90, 86, 86);
+      box-shadow: 0 15px 10px rgb(14, 13, 13);
 
 }
 .spacey-image{
@@ -397,7 +401,9 @@ width: fit-content;
   position: relative;
   left: 120%;
   top:300px;
-	box-shadow: 10px 10px 19px 0px rgba(233,240,242,1);
+	-webkit-box-shadow: 0 15px 10px rgb(58, 54, 54);
+      -moz-box-shadow: 0 15px 10px rgb(90, 86, 86);
+      box-shadow: 0 15px 10px rgb(14, 13, 13);
 
 }
 .buttons{
@@ -596,6 +602,8 @@ p {
 table {
   width: 50%;
   border-collapse: collapse;
+	transform: scale(1);
+	transition: 0.5s;
 
 }
 /* Zebra striping */
@@ -608,9 +616,11 @@ th {
   font-weight: bold;
 }
 td, th {
+		border-bottom: 1px solid black;
   padding: 6px;
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   text-align: left;
+	
 }
 /* #slide3:before {
   background-image: url("https://lorempixel.com/640/480/abstract/5/");
@@ -1048,7 +1058,7 @@ td, th {
 
   }
   .info-table td{
-    
-  }  
+
+  }
   .info-table table{
 }
