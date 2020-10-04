@@ -156,6 +156,9 @@ input[type="checkbox"]{
 
 
   }
+  .icon-bar{
+    display: none;
+  }
 }
 @media (max-width: 920px) {
   nav .menu-btn i{
@@ -269,7 +272,7 @@ body {
 }
 @media (max-width:600px) {
 .wrapper{
-font-size: 1.3em;
+font-size: 1.1em;
 width: fit-content;
 
 }
@@ -308,7 +311,7 @@ width: fit-content;
 }
 .main-wrapper{
   position: relative;
-  top: 30%;
+  top: 12%;
 }
 }
 @media (max-width:600px) {
@@ -328,7 +331,7 @@ width: fit-content;
     width: 270px !important;
     padding:2%;
     left: 10% !important;
-    margin-top: 40%;
+    margin-top: 25%;
     bottom: 20%;
 }
 }
@@ -417,20 +420,28 @@ a{
 
 }
 .sturdy-image{
-  width: 300px;
-  margin-bottom: 15%;
+  width: 250px;
+  margin-bottom: 8%;
 }
 .planet-image{
-  width: 300px;
-  margin-bottom: 15%;
+  width: 250px;
+  margin-bottom: 8%;
+  position: relative;
+  left: -6%;
+  top: 3px;
 
 }
 .spacey-image{
-  width: 300px;
-  margin-bottom: 15%;
+  width: 250px;
+  margin-bottom: 8%;
   position: relative;
-  left: -10px;
+  left: 4%;
   top: 20px;
+}
+p {
+  font-size: 90% !important;
+  line-height: 150%;
+  color: #333;
 }
 }
 .heading{
@@ -474,7 +485,7 @@ h1 {
 }
 
 p {
-  font-size: 140%;
+  font-size: 130%;
   line-height: 150%;
   color: #333;
 }
