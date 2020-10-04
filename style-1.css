@@ -9,6 +9,25 @@
 	box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
 }
+/*ading animation for header*/
+.text1{
+	animation:text 3s 1;
+}
+@keyframes text {
+	0%{
+		color:black;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom:-40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+/**animation ends here**/
 .logo{
   padding-top: 2px;
   width: 65px;
@@ -285,6 +304,7 @@ width: fit-content;
 .wrapper h1{
   position: relative;
   left:-8px;
+	margin:45%;
 
 }
 }
@@ -631,7 +651,7 @@ td, th {
   padding: 6px;
   /*border: 1px solid #ccc;*/
   text-align: left;
-	
+
 }
 /* #slide3:before {
   background-image: url("https://lorempixel.com/640/480/abstract/5/");
