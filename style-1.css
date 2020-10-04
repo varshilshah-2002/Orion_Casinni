@@ -297,14 +297,14 @@ width: fit-content;
 }
 .wrapper h2{
   position: relative;
-  left:-8px;
-  font-size: 25;
+  left:1px;
+  font-size: 18;
   padding: 3%;
 }
 .wrapper h1{
   position: relative;
-  left:-8px;
-	margin:45%;
+right: 10px;
+	margin-top:45%;
 
 }
 }
@@ -351,7 +351,7 @@ width: fit-content;
     width: 270px !important;
     padding:2%;
     left: 10% !important;
-    margin-top: 25%;
+    margin-top: 20%;
     bottom: 20%;
 }
 }
@@ -371,6 +371,7 @@ width: fit-content;
   top: 450px;
 
 }
+
 }
 .content-a{
     padding-left: 3%;
@@ -1092,4 +1093,49 @@ td, th {
 
   }
   .info-table table{
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+.content-heading-1{
+  font-size: 2em ;
+}
+.content-heading-2{
+  position: relative;
+  top: 0%;
+  right: 0%;
+  left: 25%;
+}
+.sturdy-image, .spacey-image{
+  width: 90% !important;
+} 
+.content-a{
+  width: 600px !important;
+  font-size: 1.5em;
+  
+}
+.planet-image{
+  width: 90% !important;
+
+}
+.specs{
+  font-size: 3em;
+}
+nav{
+  width: 90%;
+}
+.wrapper h1{
+  position: relative;
+  left: 2%;
+  margin-top: 25%;
+  font-size: 2em;
+}
+.wrapper h2{
+  font-size: 0.6em;
+  position: relative;
+  left: 0%;
+}
+
 }
