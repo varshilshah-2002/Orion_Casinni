@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0” >
+    <title></title>
+  </head>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #08001b;
+    min-height: 100vh;
+  }
+  .container{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 0;
+  }
+  .container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #0c002b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  .container:hover .card{
+    opacity: 0.2;
+  }
+  .container .card:hover{
+    opacity: 1;
+  }
+  .container .card::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    height: 50%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+  }
+  .container .card .content{
+    padding: 30px;
+    text-align: center;
+  }
+  .container .card .content h2{
+    position: absolute;
+    right: 30px;
+    font-size: 4em;
+    font-weight: 800;
+    color: #1779ff;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+  }
+  .container .card:hover .content h2{
+    opacity: 1;
+    transform: translateY(-70px);
+    z-index: 0;
+  }
+  .container .card .content h3{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+  .container .card .content p{
+    position: relative;
+    font-size: 1em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+  .container .card:hover .content h3,
+  .container .card:hover .content p{
+    opacity: 1;
+
+  }
+  .container .card .content a{
+    display: relative;
+    margin-top:200px;
+    padding: 10px 15px;
+    background: #fff;
+    color: #0c002b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .container .card span{
+    transition: 0.5;
+    opacity: 0;
+  }
+  .container .card:hover span{
+    opacity: 1;
+  }
+  .container .card span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,transparent,#1779ff);
+    animation: animate1 2s linear infinite;
+  }
+  @keyframes animate1 {
+    0%{
+      transform: transla teX(-100%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+  }
+  .container .card span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent,#1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+  }
+  @keyframes animate2 {
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(100%);
+    }
+  }
+  .container .card span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left,transparent,#1779ff);
+    animation: animate3 2s linear infinite;
+  }
+  @keyframes animate3 {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+  .container .card span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top,transparent,#1779ff);
+    animation: animate4 2s linear infinite;
+  }
+  @keyframes animate4 {
+    0%{
+      transform: translateY(100%);
+    }
+    100%{
+      transform: translateY(-100%);
+    }
+  }
+.content-card{
+  margin-top: 12%;
+  padding: 3%;
+  position: relative;
+  top: -18px;
+  z-index:0;
+}
+.card-image{
+  width: 250px;
+  position: relative;
+  top:-19px;
+  z-index: -5;
+}
+.button-card{
+  position: relative;
+  top: 30px;
+
+}
+.number-card{
+  position: relative;
+  z-index: 99;
+  top: 80px;
+  color: rgb(207, 138, 159) !important;
+}
+.content{
+  z-index: 999;
+}
+#loading{
+  width: 100%;
+  position: fixed;
+  height:100vh;
+  background: #fff url('globe.gif') no-repeat center center;
+  z-index:1;
+  overflow:visible;
+}
+
+
+
+		.select{
+			width: 60%;
+			height: 580px;
+			padding: 5%;
+			background: #222;
+			position: absolute;
+			top: -1000px;
+			left: 20%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+		}
+		.select.display{
+			top: 10px;
+		}
+		.select div{
+			width: 100%;
+			height: 200px;
+			display: flex;
+			padding: 5px;
+			border: 1px solid white;
+			position: relative;
+			margin: 5px auto;
+		}
+		.select div img{
+			width: 300px;
+			height: 100%;
+		}
+		.select div p{
+			padding: 35px;
+			color: white;
+		}
+		.select div h6,
+		.select div button{
+			position: absolute;
+			left: 45%;
+			top: 50%;
+			color: white;
+		}
+		.select div button{
+			left: 60%;
+			top: 55%;
+		}
+		.select div span{
+			display: none;
+		}
+  </style>
+  <body>
+    <!--<div id="loading"></div>-->
+    <div class="container">
+      <div class="card">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <div class="content">
+          <h2 class="number-card">01</h2>
+          <div class="image-card">
+            <img class="card-image" src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg"  alt="">
+          </div>
+
+          <hr>
+
+         <div class="content-card">
+          <h3>Post Title</h3>
+          <p>this is a card designthis is a card design this is a card design this is a card design.</p>
+          <button>Add-cart</button>
+          <span></span>
+
+        </div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <div class="content">
+          <h2 class="number-card">01</h2>
+          <div class="image-card">
+            <img class="card-image" src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg"  alt="">
+          </div>
+
+          <hr>
+
+         <div class="content-card">
+          <h3>Post Title</h3>
+          <p>this is a card designthis is a card design this is a card design this is a card design.</p>
+          <a class="button-card" href="#">Read More</a>
+
+        </div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <div class="content">
+          <h2 class="number-card">01</h2>
+          <div class="image-card">
+            <img class="card-image" src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg"  alt="">
+          </div>
+
+          <hr>
+
+         <div class="content-card">
+          <h3>Post Title</h3>
+          <p>this is a card designthis is a card design this is a card design this is a card design.</p>
+          <a class="button-card" href="#">Read More</a>
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="select">
+    </div>
+  </body>
+  <script type="text/javascript">
+  /**var loading;
+  function preload(opacity){
+    if(opacity <= 0){
+      showContent();
+    }
+    else {
+      loading.style.opacity = opacity;
+      window.setTimeout(function(){
+        preload(opacity - 0.05)
+      },100);
+    }
+  }
+    }
+    function displayContent(){
+      loading.style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }
+    document.addEventListener("DOMContentLoaded", function(){
+      loading = document.getElementById('loading');
+      preload(1);
+    });*/
+    var noti = document.querySelector('h1');
+  	var select = document.querySelector('.select');
+  	var button = document.getElementsByTagName('button');
+  	for(var but of button){
+  		but.addEventListener('click', (e)=>{
+  			var add = Number(noti.getAttribute('data-count') || 0);
+  			noti.setAttribute('data-count', add +1);
+  			noti.classList.add('zero')
+
+  			// image --animation to cart ---//
+  			var image = e.target.parentNode.querySelector('img');
+  			var span = e.target.parentNode.querySelector('span');
+  			var s_image = image.cloneNode(false);
+  			span.appendChild(s_image);
+  			span.classList.add("active");
+  			setTimeout(()=>{
+  				span.classList.remove("active");
+  				span.removeChild(s_image);
+  			}, 500);
+
+        var parent = e.target.parentNode;
+        var clone = parent.cloneNode(true);
+        select.appendChild(clone);
+        clone.lastElementChild.innerText = "Buy-now";
+
+        if (clone) {
+          noti.onclick = ()=>{
+            select.classList.toggle('display');
+          }
+        }
+      })
+    }
+  </script>
+</html>
