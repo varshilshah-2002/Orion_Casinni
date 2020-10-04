@@ -45,12 +45,12 @@
 	-ms-transition: all 0.5s linear;
 }
 
- .facebook, .twitter, .instagram, .youtube, .linkedin{
+ .facebook, .twitter, .instagram, .reddit, .linkedin{
   background: #3b5998 !important;
   width: 200px !important;
   height: 40px;
 }
-.fa-facebook, .fa-twitter, .fa-instagram,.fa-linkedin,.fa-youtube{
+.fa-facebook, .fa-twitter, .fa-instagram,.fa-linkedin,.fa-reddit{
   font-size: 30;
   margin-left: 7%;
 }
@@ -63,7 +63,7 @@
 	background: #e4405f !important;
 }
 
- .youtube {
+ .reddit {
 	background: #cd201f !important;
 }
 
@@ -102,7 +102,7 @@ nav{
   display: flex;
   height: 85px;
   width: 90%;
-  background: #f3b919;
+  background: #ed5107;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -153,8 +153,8 @@ input[type="checkbox"]{
     padding: 0 40px 0 50px;
     z-index: 999;
     width: 70vw;
-    
-    
+
+
   }
 }
 @media (max-width: 920px) {
@@ -216,7 +216,7 @@ input[type="checkbox"]{
   z-index: -1;
   width: 100%;
   padding: 0 30px;
-  
+
   color: #cec2c2 !important;
 }
 .content div{
@@ -346,7 +346,7 @@ width: fit-content;
 .margin-custom-3{
   position: relative;
   top: 450px;
-  
+
 }
 }
 .content-a{
@@ -364,7 +364,7 @@ width: fit-content;
 
 }
 .content-a p, .content-b p{
- 
+
   color: rgb(173, 173, 173);
 }
 .content-b{
@@ -383,17 +383,22 @@ width: fit-content;
   width: 500px;
   position: relative;
   right: 3%;
+	box-shadow: -2px 13px 7px -4px rgba(233,240,242,1);
 }
 .planet-image{
   width: 500px;
   position: relative;
   left: 2%;
+	box-shadow: 10px 10px 19px 0px rgba(233,240,242,1);
+
 }
 .spacey-image{
   width: 500px;
   position: relative;
   left: 120%;
   top:300px;
+	box-shadow: 10px 10px 19px 0px rgba(233,240,242,1);
+
 }
 .buttons{
     margin-top: 5px;
@@ -425,7 +430,7 @@ a{
 .heading{
     text-align: center;
     margin-top: 5%;
-  
+
 }
 
 }
@@ -573,6 +578,7 @@ p {
 #title h1 {
  transform: translateZ(.25px) scale(.75);
  transform-origin: 50% 100%;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue!important;
 
 }
 
@@ -581,7 +587,31 @@ p {
   background-image: url("https://img5.goodfon.com/wallpaper/nbig/3/9c/space-planet-landscape-wallpapers-1920-x-1080.jpg");
   background-position:center;
 }
+/*specifications     */
+.specs{
+	font-size: 250%;
+	text-align: justify;
+}
+/*table ka Css*/
+table {
+  width: 50%;
+  border-collapse: collapse;
 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
 /* #slide3:before {
   background-image: url("https://lorempixel.com/640/480/abstract/5/");
   transform: translateZ(-1px) scale(2);
@@ -887,7 +917,7 @@ p {
 	}
 	.left .usage .social a span:hover{
     background-color: #f12020;
-    
+
 	}
   .center .usage #hovercheck {
 	  /*font-size: 1.4375rem;*/
@@ -926,7 +956,7 @@ p {
 	.right form input, .right form .msgForm{
 	  width: 100%;
 	  font-size: 1.0625rem;
-	  background: #151515;
+	  background: #fff;
 	  padding-left: 10px;
 	  border: 1px solid #222222;
 	}
@@ -982,4 +1012,6 @@ p {
 	    margin: 5px 0;
 	  }
 	}
+/*footer design*/
+
 /*footer design*/
